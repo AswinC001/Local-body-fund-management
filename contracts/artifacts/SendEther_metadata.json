@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_to",
+						"type": "address"
+					}
+				],
+				"name": "sendViaCall",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Citizen.sol": "SendEther"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Citizen.sol": {
+			"keccak256": "0x54e668cc5474186e632724ceecc4585ab84e248ea9560669c60ed75bd2bc17b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84a381455ab1615fe5f1331d4a04b5ead3a6efcacecf696a6160ae7f7d271082",
+				"dweb:/ipfs/QmYbd9ZtTYrB4855H4wB23zK4mGhibhHzNCjVBCaM9mQTX"
+			]
+		}
+	},
+	"version": 1
+}
