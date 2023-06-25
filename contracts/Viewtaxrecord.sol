@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
-pragma solidity ^0.8.0;
+
 
 contract ViewTaxRecord {
     struct Tax {
@@ -29,12 +29,12 @@ contract ViewTaxRecord {
         return taxRecords[_account].length;
     }
     
-    function AllTaxRecord(address _account, uint256 _index) public view returns (string memory, uint256,bool) {
+    function ViewAll(address _account, uint256 _index) public view returns (string memory, uint256,bool) {
         require(_index < taxRecords[_account].length, "Invalid tax record index");
         Tax memory tax = taxRecords[_account][_index];
         return (tax.taxType, tax.pendingAmount,tax.status);
     }
-   function PendingTaxRecord(address _account, uint256 _index) public view returns (string memory, uint256, string memory) {
+   function PendingOnly(address _account, uint256 _index) public view returns (string memory, uint256, string memory) {
     require(_index < taxRecords[_account].length, "Invalid tax record index");
     Tax memory tax = taxRecords[_account][_index];
     require(!tax.status, "Pending only");

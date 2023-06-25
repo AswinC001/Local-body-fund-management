@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
+
 contract Official {
     /*
     
@@ -17,14 +18,14 @@ receive() exists?  fallback()
         /      \
     receive()   fallback()
     */
-
+   
     // Function to receive Ether. msg.data must be empty
     receive() external payable {}
 
     // Fallback function is called when msg.data is not empty
     fallback() external payable {}
 
-    function getBalance() public view returns (uint) {
+    function Received() public view returns (uint) {
         return address(this).balance;
     }
 }
