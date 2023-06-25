@@ -27,7 +27,7 @@ contract viewtaxadmin {
         return taxRecords[_account].length;
     }
 
-    function AllTaxRecord(address _account, uint256 _index)
+    function ViewTaxRecord(address _account, uint256 _index)
         public
         view
         returns (string memory, string memory, uint256, bool)
